@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Scene, Actions } from 'react-native-router-flux';
+import { Router, Scene } from 'react-native-router-flux';
 import CalculoGasolina from '../components/CalculoGasolina';
 import Home from '../components/Home'
 

@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import { Actions } from 'react-native-router-flux'
@@ -10,8 +11,9 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.botao} onPress={mudarTeala}>
-        <Text>Calcular Gasolina ou Álcool</Text>
+        <Text style={styles.texto}>Calcular Gasolina ou Álcool</Text>
       </TouchableOpacity>
+      <StatusBar style="auto" />
     </View>
   )
 }
@@ -31,5 +33,8 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  texto: {
+    fontSize: 15
   }
 })
