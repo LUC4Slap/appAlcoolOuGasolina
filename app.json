@@ -21,6 +21,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "description": "App para calcular se compensa colocar álcool ou gasolina",
+    "githubUrl": "https://github.com/LUC4Slap/appAlcoolOuGasolina",
+    "android": {
+      "package": "com.lucas_almeida.alcoolOuGasolina"
     }
   }
 }
