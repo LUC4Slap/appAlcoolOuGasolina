@@ -4,14 +4,21 @@ import { View, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 
 export default function Home() {
-  function mudarTeala() {
+  function calculoGasolina() {
     Actions.calculo();
+  }
+
+  function buscarCnpj() {
+    Actions.cnpj();
   }
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.botao} onPress={mudarTeala}>
+      <TouchableOpacity style={styles.botao} onPress={calculoGasolina}>
         <Text style={styles.texto}>Calcular Gasolina ou Álcool</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.botao} onPress={buscarCnpj}>
+        <Text style={styles.texto}>Consultar CNPJ</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
@@ -32,7 +39,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: '#ccc',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 4
   },
   texto: {
     fontSize: 15

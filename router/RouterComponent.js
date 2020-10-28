@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import CalculoGasolina from '../components/CalculoGasolina';
 import Home from '../components/Home'
+import ConsultarCnpj from '../components/ConsultarCnpj'
 
 
 export default function RouterComponent() {
@@ -10,6 +11,7 @@ export default function RouterComponent() {
       <Scene key="root">
         <Scene key="home" title="Home" component={Home} initial />
         <Scene key="calculo" title="Calculo Gasolina" component={CalculoGasolina} />
+        <Scene key="cnpj" title="Consultar CNPJ" component={ConsultarCnpj} />
       </Scene>
     </Router>
   )
