@@ -5,7 +5,7 @@ import MapView, { Marker } from 'react-native-maps';
 const Map = ({ location }) => {
   return (
     <View style={styles.container}>
-      <MapView location style={styles.mapStyle}>
+      <MapView region={{ ...location, latitudeDelta: 0.005, longitudeDelta: 0.005}} location style={styles.mapStyle}>
           <Marker coordinate={location}></Marker>
       </MapView>
     </View>
